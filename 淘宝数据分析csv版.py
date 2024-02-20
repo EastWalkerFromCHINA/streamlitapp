@@ -12,7 +12,7 @@ st.set_page_config(page_title="淘宝销量数据", page_icon=":flag_china:", la
 
 table_csv = "mao_zi.csv" #在此处修改要分析的文件
 
-#df = pd.read_csv('C:\\Users\\ASUS\\Desktop\\爬虫文件\\淘宝项目\\{}'.format(table_csv) ,encoding='gbk')
+df = pd.read_csv(ble_csv ,encoding='gbk')
 data_table = open("mao_zi.csv","r")
 
 
@@ -21,7 +21,7 @@ df.info() # 查看表总体信息
 
 
 # 数据清洗
-df['number_purchaser'] = df['number_purchaser'].str.replace('+人收货', '')  # 去除多余字符
+df['number_purchaser'] = df['number_purchaser'].str.replace('\+人收货', '')  # 去除多余字符
 df['number_purchaser'] = df['number_purchaser'].str.replace('万', '0000') 
 df['number_purchaser'] = df['number_purchaser'].astype('int')  # 转换为数字类型
 
