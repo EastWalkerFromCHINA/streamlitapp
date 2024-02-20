@@ -11,7 +11,7 @@ st.set_page_config(page_title="淘宝销量数据", page_icon=":flag_china:", la
 
 table_csv = "mao_zi.csv" #在此处修改要分析的文件
 
-df = pd.read_csv(tble_csv ,encoding='gbk')
+df = pd.read_csv(table_csv ,encoding='gbk')
 data_table = open("mao_zi.csv","r")
 
 
