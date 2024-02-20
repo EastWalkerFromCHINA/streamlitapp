@@ -20,7 +20,7 @@ df.info() # 查看表总体信息
 
 
 # 数据清洗
-df['number_purchaser'] = df['number_purchaser'].str.replace('\+人收货', '')  # 去除多余字符
+df['number_purchaser'] = df['number_purchaser'].str.replace('+人收货', '')  # 去除多余字符
 df['number_purchaser'] = df['number_purchaser'].str.replace('万', '0000') 
 df['number_purchaser'] = df['number_purchaser'].apply(int) # 转换为数字类型
 
