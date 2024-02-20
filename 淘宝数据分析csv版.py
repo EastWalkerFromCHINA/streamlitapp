@@ -7,7 +7,6 @@ import streamlit as st  # 可视化
 ### 将csv文件导入，进行数据分析，并使用streamlit可视化，并在streamlit云分享
 
 
-
 st.set_page_config(page_title="淘宝销量数据", page_icon=":flag_china:", layout="wide")  # 设置streamlit基础页面信息，只能放在开头，且只能执行一次
 
 table_csv = "mao_zi.csv" #在此处修改要分析的文件
