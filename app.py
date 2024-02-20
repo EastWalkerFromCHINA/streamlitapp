@@ -1,4 +1,4 @@
-#import pymysql
+
 import pandas as pd
 import plotly.express as px  # 画图
 import streamlit as st  # 可视化
